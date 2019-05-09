@@ -6,11 +6,13 @@
                 {{child}}
             </li>
         </ul>
+        {{ weather_data }}
     </div> 
 </template>
 
 <script>
 export default {
+    props: ['weather_data'],
     data() {
         return {
             childComponents: ['TempVarChart.vue', 'Highlights']
