@@ -1,12 +1,18 @@
 <template>
   <div id="app">
    <p>{{msg}}</p>
+   <Content v-bind:weather_data="weather_data"></Content>
   </div>
 </template>
 
 <script>
+import Content from './components/Content.vue';
+
 export default {
   name: 'app',
+   components: {
+    'Content': Content
+  },
   data () {
     return {
       msg: 'Vue js application',
