@@ -9,7 +9,21 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Vue js application'
+      msg: 'Vue js application',
+      weather_data: {
+        location: "California",
+        temperature: {
+          current: "35 C",
+        },
+        highlights: {
+          uvindex: "3",
+          windstatus: {
+            speed: "20 km/h",
+            direction: "N-E",
+          },
+          visibility: "12 km",
+        },
+      },
     }
   },
   methods: {
