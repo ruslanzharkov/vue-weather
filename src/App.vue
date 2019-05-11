@@ -231,7 +231,7 @@ export default {
    locationEntered: function() {
      var input = this.$refs.input;
      if (input.value === '') {
-       this.location = "New York";
+       this.location = "Bishkek";
      } else {
        this.location = this.convertToTitleCase(input.value);
      }
@@ -477,7 +477,7 @@ export default {
    },
  },
  mounted: async function() {
-   this.location = "New York";
+   this.location = "Bishkek";
    await this.organizeAllDetails();    
  }
 };
