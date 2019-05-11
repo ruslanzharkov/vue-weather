@@ -1,45 +1,19 @@
 <template>
-    <div>
-        <p>This child components of Content.vue are:</p>
-        <ul>
-            <li v-for="child in childComponents" v-bind:key="child">
-                {{child}}
-            </li>
-        </ul>
-        {{ weather_data }}
-        <temp-var-chart :tempVar="tempVar"></temp-var-chart>
-        <today-highlights :highlights="highlights"></today-highlights>
-    </div> 
+ <div style="position: relative;">
+     <temp-var-chart :tempVar="tempVar"></temp-var-chart>
+     <today-highlights :highlights="highlights"></today-highlights>
+ </div>
 </template>
 
 <script>
-import TempVarChart from './TempVarChart.vue'
-import Highlights from './Highlights.vue'
+import TempVarChart from './TempVarChart.vue';
+import Highlights from './Highlights.vue';
 
 export default {
-    props: ['weather_data'],
-    components: {
-        'temp-var-chart': TempVarChart,
-        'today-highlights': Highlights
-    },
-    data() {
-        return {
-            childComponents: ['TempVarChart.vue', 'Highlights'],
-            tempVar: this.weather_data.temperature,
-            highlights: this.weather_data.highlights
-        }
-    },
-
-    methods: {
-
-    },
-
-    computed: {
-        
-    }
+ props: ['highlights', 'tempVar'],
+ components: {
+   'temp-var-chart': TempVarChart,
+   'today-highlights': Highlights
+ },
 }
 </script>
-
-<style>
-
-</style>

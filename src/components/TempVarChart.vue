@@ -1,25 +1,23 @@
 <template>
-    <div id="tempvarchart">
-    <p>Temperature Information:</p>
-    {{ tempVar }}
+  <div>
+    {{ tempVar.tempToday }}    
   </div>
 </template>
 
 <script>
 export default {
-    props: ['tempVar'],
-    data() {
-        return {
+  props: ["tempVar"],
+  components: {},
+  data() {
+    return {
 
-        }
-    },
-    methods: {
+    };
+  },
+  methods: {
 
-    },
-    computed: {
+  },
 
-    }
-}
+};
 </script>
 
 <style>
