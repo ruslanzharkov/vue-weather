@@ -115,6 +115,7 @@ body {
 }
 
 #search-btn {
+   cursor: pointer;
    position: absolute;
    right: 0;
    top: 16px;
@@ -279,8 +280,8 @@ hr {
    }
 
    #dashboard-content {
-       width: calc(100% — 350px);
-       max-width: calc(100% — 350px);
+       width: 100% - 350px;
+       max-width: 100% - 350px;
        flex: auto;
    }
 }
