@@ -255,6 +255,10 @@ hr {
    line-height: 0.5px;
 }
 
+.raphael-group-19-creditgroup, .raphael-group-37-creditgroup, .raphael-group-111-creditgroup {
+   display: none;
+}
+
 @media only screen and (min-width: 768px) {
    #sidebar {
        height: 100vh;
